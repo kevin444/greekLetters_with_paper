@@ -1,0 +1,11 @@
+7d71893314ed7766e1e4aecea8668390 *DESCRIPTION
+95a5c2d63bc90a3f44e7f36e82eb3a39 *NAMESPACE
+c3bc7a8d98655104f560c0396be1d1a3 *R/greekletters.R
+fb1a6cbdb631c64788827106c7295981 *R/print_greek.R
+f44916e6b3a77eb1f4f4dfcc328fc1b2 *R/summary_greek.R
+6720805908eff39a533e5cfda5b34b2d *inst/CITATION
+ae49c2026c311ae0c1840ee990f86b27 *man/greeks.Rd
+ab671def33c96cc826af892c012a0504 *man/print.summary_greek.Rd
+28120c8d8f08f3a8bf0af8d68503ccbd *man/summary_greek.Rd
+5b5479e09bf50c8ece4231d71cdcd2f0 *tests/testthat.R
+bb47c7c29327ceae3d2c2c7e040e651b *tests/testthat/test-greeks.R

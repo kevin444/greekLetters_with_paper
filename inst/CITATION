@@ -1,0 +1,11 @@
+citHeader("To cite package greekLetters in publications use:")
+
+citEntry(entry="Manual",
+  title = "greekLetters: routines for writing Greek letters and mathematical symbols on the RStudio and RGui",
+  author = personList(person("Kévin Allan Sales Rodrigues", comment = c(ORCID = "0000-0003-4925-5883"))),
+  year = "2020",
+  note = "R package version 0.0.7",
+  textVersion =
+  paste("Rodrigues, K. A. S., (2020). greekLetters: routines for writing Greek letters and mathematical symbols on the RStudio and RGui (R package).",
+  "R package version 0.0.7")
+)
