@@ -3,10 +3,6 @@
 \name{greeks}
 \alias{greeks}
 \title{Function that returns strings with Greek letters}
-\format{
-A named list, see \code{names(greek)} for all Greek letters
-and mathematical symbols names.
-}
 \usage{
 greeks(greekletter)
 }
@@ -18,7 +14,7 @@ Returns the desired Greek letter or mathematical symbol in string format.
 }
 \description{
 Function to obtain strings with Greek letters and mathematical symbols
-with or without subscripts and superscripts
+with or without subscripts and superscripts.
 }
 \details{
 It is recommended that the font size of the R console be increased for
@@ -26,38 +22,36 @@ better visualization of the symbols,
 as some of the symbols are quite small.
 
 The subscripts and supersripts are restricted to numbers 0 to 9.
-}
-\note{
-For users working with Rgui this function don't accept subscripts and just accept superscripts 1, 2 and 3. For more details run the commands:
-superscriptSymbols
-subscriptSymbols
-greek
 
-#symbols printed as a "rectangle" don't work in RGui, but these symbols work normally in RStudio.
+For users working with Rgui this function don't accept subscripts and just accept superscripts 1, 2 and 3. For more details run the commands:
+
+symbols printed as a "rectangle" don't work in RGui, but these symbols work normally in RStudio.
+
+To see names of symbols use \code{\link{print_greeks}}.
 }
 \examples{
+\donttest{
+# Linear regression
+paste("y", " = X", greeks("beta"), " + ", greeks("epsilon"), sep ="")
 
+# pi constant
+paste(greeks("pi"), greeks("almostEqual"), "3.14")
 
-\dontrun{
+# Expected value
+paste("E[X] = ", greeks("integral"), "xf(x)dx", sep = "")
 
 greeks("sigma^2")
 
 greeks("Delta^5")
 
-
 greeks("yourname^9")
 
-#all Greek letters and mathematical symbols names
-greek_vector
-
-#all Greek letters and mathematical symbols names
-greek
-
 # testing statistical hypothesis
-paste(greeks("H_0"),":", greek$mu, " = 0", "versus", greeks("H_1"), ":", greek$notEqual, " 0" )
+paste(greeks("H_0"),":", greeks("mu"), " = 0")
+paste("versus", greeks("H_1"), ":", greeks("notEqual"), " 0" )
 
 # returns the Greek letters
-cat("The Greek letters", greek$alpha, greek$beta, "...", greek$omega, sep=", ")
+paste("The Greek letters", greeks("alpha"), greeks("beta"), "...", greeks("omega"), ".", sep=", ")
 }
 
 }

@@ -1,12 +1,15 @@
 #main author: Kévin Allan Sales Rodrigues
 #' Summarizing Linear Model Fits With Greek Letters
 #'
-#' @description summary method with Greek letters for class "lm".
+#' summary method with Greek letters for class "lm".
 #'
 #' @inheritParams stats::summary.lm
 #' @inheritDotParams stats::summary.lm
 #'
-#' @return The function is like summary.lm but with Greek
+#'
+#' @export
+#'
+#' @returns The function is like summary.lm but with Greek
 #' letters in output.
 #'
 #'
@@ -23,10 +26,8 @@
 #' @author Kévin Allan Sales Rodrigues.
 #'
 #' @examples
-#'
-#' \dontrun{
-#' Same example as summary.lm but
-#' with Greek letters
+#' \donttest{
+#' # Same example as summary.lm but with Greek letters
 #' ## Annette Dobson (1990) "An Introduction to Generalized Linear Models".
 #' ## Page 9: Plant Weight Data.
 #' ctl <- c(4.17,5.58,5.18,6.11,4.50,4.61,5.17,4.53,5.33,5.14)
@@ -36,19 +37,16 @@
 #' lm.D9 <- lm(weight ~ group)
 #' lm.D90 <- lm(weight ~ group - 1) # omitting intercept
 #' coef(lm.D90)  # the bare coefficients
-#' sld90 <- greekLetters::summary_greek(lm.D90 <- lm(weight ~ group -1))  # omitting intercept
-#' greekLetters::print.summary_greek(sld90)
+#' summary_greek(lm.D90 <- lm(weight ~ group -1))  # omitting intercept
 #'  }
-#'
 
 ##############
-#' @export summary_greek
-#' @export
+
 summary_greek = function(object, correlation = FALSE, symbolic.cor = FALSE, ...){
 
- ss= stats::summary.lm(object, correlation = FALSE, symbolic.cor = FALSE, ...)
+ ss = stats::summary.lm(object, correlation = FALSE, symbolic.cor = FALSE, ...)
 
- colnames(ss$coefficients) = c(greek$beta, greek$sigma, "t value", "Pr(>|t|)")
+ colnames(ss$coefficients) = c(greeks("beta"), greeks("sigma"), "t value", "Pr(>|t|)")
 
  class(ss) = "summary_greek"
  return(ss)

@@ -1,7 +1,7 @@
 #main author: Kévin Allan Sales Rodrigues
 #' Print Summary for Linear Model Fits With Greek Letters
 #'
-#' @description print summary method with Greek letters for class "lm".
+#' print summary method with Greek letters for class "lm".
 #'
 #' @inheritParams base::print
 #' @inheritDotParams base::print
@@ -10,7 +10,7 @@
 #'
 #' @param concise logical.
 #'
-#' @return The function is like print.summary.lm but with Greek
+#' @returns The function is like print.summary.lm but with Greek
 #' letters in output.
 #'
 #' @details
@@ -28,11 +28,14 @@
 #' @importFrom stats symnum
 #' @importFrom stats pf
 #'
+#' @export
+#' @method print summary_greek
+#' @rdname print.summary_greek
+#'
 #' @author Kévin Allan Sales Rodrigues.
 #'
 #' @examples
-#'
-#' \dontrun{
+#' \donttest{
 #' #Same example as summary.lm and print.summary.lm from stat packages but with Greek letters.
 #' ## Annette Dobson (1990) "An Introduction to Generalized Linear Models".
 #' ## Page 9: Plant Weight Data.
@@ -43,19 +46,17 @@
 #' lm.D9 <- lm(weight ~ group)
 #' lm.D90 <- lm(weight ~ group - 1) # omitting intercept
 #' coef(lm.D90)  # the bare coefficients
-#' sld90 <- greekLetters::summary_greek(lm.D90 <- lm(weight ~ group -1))  # omitting intercept
-#' greekLetters::print.summary_greek(sld90)
+#' summary_greek(lm.D90 <- lm(weight ~ group -1))  # omitting intercept
 #' }
 #'
-#' @export print.summary_greek
-#' @export
-print.summary_greek <-
+#'
+print.summary_greek =
   function (x, digits = max(3L, getOption("digits") - 3L), symbolic.cor = x$symbolic.cor,
             signif.stars = getOption("show.signif.stars"), concise = FALSE, ...)
   {
     cat("\nCall:", if(!concise) "\n" else " ", paste(deparse(x$call), sep = "\n", collapse = "\n"),
         if (!concise) "\n\n", sep = "")
-    cat("Statistical Model of form: y = X", greek$beta, " + ", greek$epsilon, sep = "", collapse = "\n\n")
+    cat("Statistical Model of form: y = X", greeks("beta"), " + ", greeks("epsilon"), sep = "", collapse = "\n\n")
     resid <- x$residuals
     df <- x$df
     rdf <- df[2L]

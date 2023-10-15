@@ -2,7 +2,7 @@
 
 S3method(print,summary_greek)
 export(greeks)
-export(print.summary_greek)
+export(print_greeks)
 export(summary_greek)
 importFrom(assertthat,assert_that)
 importFrom(stats,naprint)

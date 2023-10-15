@@ -1,11 +1,11 @@
 citHeader("To cite package greekLetters in publications use:")
 
-citEntry(entry="Manual",
+bibentry(bibtype="Manual",
   title = "greekLetters: routines for writing Greek letters and mathematical symbols on the RStudio and RGui",
-  author = personList(person("Kévin Allan Sales Rodrigues", comment = c(ORCID = "0000-0003-4925-5883"))),
-  year = "2020",
-  note = "R package version 0.0.7",
+  author = c(person("Kévin Allan Sales Rodrigues", comment = c(ORCID = "0000-0003-4925-5883")) ),
+  year = "2023",
+  note = "R package version 1.0.2",
+  url = {"https://CRAN.R-project.org/package=greekLetters"},
   textVersion =
-  paste("Rodrigues, K. A. S., (2020). greekLetters: routines for writing Greek letters and mathematical symbols on the RStudio and RGui (R package).",
-  "R package version 0.0.7")
-)
+  paste("Rodrigues, K. A. S. (2023). greekLetters: routines for writing Greek letters and mathematical symbols on the RStudio and RGui (version 1.0.2). URL: https://CRAN.R-project.org/package=greekLetters .")
+  )

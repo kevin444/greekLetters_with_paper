@@ -35,10 +35,8 @@ better visualization of the symbols,
 as some of the symbols are quite small.
 }
 \examples{
-
-\dontrun{
-Same example as summary.lm but
-with Greek letters
+\donttest{
+# Same example as summary.lm but with Greek letters
 ## Annette Dobson (1990) "An Introduction to Generalized Linear Models".
 ## Page 9: Plant Weight Data.
 ctl <- c(4.17,5.58,5.18,6.11,4.50,4.61,5.17,4.53,5.33,5.14)
@@ -48,10 +46,8 @@ weight <- c(ctl, trt)
 lm.D9 <- lm(weight ~ group)
 lm.D90 <- lm(weight ~ group - 1) # omitting intercept
 coef(lm.D90)  # the bare coefficients
-sld90 <- greekLetters::summary_greek(lm.D90 <- lm(weight ~ group -1))  # omitting intercept
-greekLetters::print.summary_greek(sld90)
+summary_greek(lm.D90 <- lm(weight ~ group -1))  # omitting intercept
  }
-
 }
 \seealso{
 See \code{\link[stats]{summary.lm}} for more details.
