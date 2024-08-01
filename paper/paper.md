@@ -61,10 +61,10 @@ paste(greeks("H_0"), ":", greeks("mu"), " = 0")
 paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
 ```
     # output
-    \begin{flushleft}
-    $$H_0 : \mu = 0 $$
-    $$H_1 : \mu \not = 0 $$
-    \end{flushleft}
+    # $$H_0 : \mu = 0 $$
+    # $$H_1 : \mu \not = 0 $$
+
+
 
 
 
