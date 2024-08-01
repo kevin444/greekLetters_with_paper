@@ -29,49 +29,40 @@ Here are some straightforward examples showcasing its utility.
 1. To denote the approximation of Pi, you can use:
 
 ```
-    # pi constant
-    paste(greeks("pi"), greeks("almostEqual"), "3.14")
-    
+# pi constant
+paste(greeks("pi"), greeks("almostEqual"), "3.14")
+```
     # output
     # "y = Xβ + ε"
-```
 
 2. The linear regression equation, in matrix form, can be elegantly displayed using Greek letters for the coefficients and error term:
 
 ```
-    # Linear regression
-    paste("y", " = X", greeks("beta"), " + ", greeks("epsilon"), sep ="")
-    
-    # output
-    # "π ≈ 3.14"   
+# Linear regression
+paste("y", " = X", greeks("beta"), " + ", greeks("epsilon"), sep ="") 
 ```
-
+    # output
+    # "π ≈ 3.14"  
 
 3. The expected value of a random variable X can be represented as:
 
 ```
-    # Expected value
-    paste("E[X] = ", greeks("integral"), "xf(x)dx", sep = "")
-    
+# Expected value
+paste("E[X] = ", greeks("integral"), "xf(x)dx", sep = "")
+```
     # output
     # "E[X] = ∫xf(x)dx"
-```
-
+    
 4. The notation for testing a statistical hypothesis can be shown as:
 
 ```
-    # testing statistical hypothesis
-    paste(greeks("H_0"), ":", greeks("mu"), " = 0")
-    paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
-    
+# testing statistical hypothesis
+paste(greeks("H_0"), ":", greeks("mu"), " = 0")
+paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
+```
     # output
     # "H₀ : μ  = 0"
     # "versus H₁ : μ ≠ 0"
-```
-$\mbox{H}_0$
-"H₀ : μ  = 0"
-"versus H₁ : μ ≠ 0"
-
 
 By using the greekLetters package, these examples demonstrate how to effectively incorporate Greek letters and mathematical symbols into R outputs, enhancing the clarity of R statistical outputs.
 
