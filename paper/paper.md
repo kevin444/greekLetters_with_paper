@@ -32,8 +32,6 @@ Here are some straightforward examples showcasing its utility.
 # pi constant
 paste(greeks("pi"), greeks("almostEqual"), "3.14")
 ```
-    # output
-    # "y = Xβ + ε"
 
 2. The linear regression equation, in matrix form, can be elegantly displayed using Greek letters for the coefficients and error term:
 
@@ -41,8 +39,6 @@ paste(greeks("pi"), greeks("almostEqual"), "3.14")
 # Linear regression
 paste("y", " = X", greeks("beta"), " + ", greeks("epsilon"), sep ="") 
 ```
-    # output
-    # "π ≈ 3.14"  
 
 3. The expected value of a random variable X can be represented as:
 
@@ -50,8 +46,6 @@ paste("y", " = X", greeks("beta"), " + ", greeks("epsilon"), sep ="")
 # Expected value
 paste("E[X] = ", greeks("integral"), "xf(x)dx", sep = "")
 ```
-    # output
-    # "E[X] = ∫xf(x)dx"
     
 4. The notation for testing a statistical hypothesis can be shown as:
 
@@ -60,15 +54,10 @@ paste("E[X] = ", greeks("integral"), "xf(x)dx", sep = "")
 paste(greeks("H_0"), ":", greeks("mu"), " = 0")
 paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
 ```
-    # output
-    # $$H_0 : \mu = 0 $$
-    # $$H_1 : \mu \not = 0 $$
 
+The outputs of the commands shown in the console are presented in Figure 1
 
-
-
-
-![Console outputs\label{fig1}](figure1.png)
+![Console outputs\label{fig1}](figure1.png){: style="width:100%; height:auto;" }
 
 By using the greekLetters package, these examples demonstrate how to effectively incorporate Greek letters and mathematical symbols into R outputs, enhancing the clarity of R statistical outputs.
 
