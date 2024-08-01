@@ -55,7 +55,7 @@ paste(greeks("H_0"), ":", greeks("mu"), " = 0")
 paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
 ```
 
-The outputs of the commands shown in the console are presented in Figure 1
+Figure 1 contains the outputs of the presented commands.
 
 ![Console outputs\label{fig1}](figure1.png)
 
