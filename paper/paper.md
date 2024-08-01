@@ -65,7 +65,7 @@ Here are some straightforward examples showcasing its utility.
     paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
     
     # output
-    # "H~0~ : μ  = 0"
+    # "H<sub>0</sub> : μ  = 0"
     # "versus H~1~ : μ ≠ 0"
 ```
 
