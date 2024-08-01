@@ -61,10 +61,24 @@ paste(greeks("H_0"), ":", greeks("mu"), " = 0")
 paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
 ```
     # output
-    # "H₀ : μ  = 0"
-    # "versus H₁ : μ ≠ 0"
+    # $H_0 : \mu = 0 $
+    # $H_1 : \mu \not = 0 $
+    $H_0 : \mu = 0 $
+    $H_1 : \mu \not = 0 $
+$$H_0 : \mu = 0 $$
+$$H_1 : \mu \not = 0 $$
+
+$$a^n + b^n = c^n $$
+  # "H₀ : μ  = 0"
+  # "versus H₁ : μ ≠ 0"
+
+
+
+![Console outputs\label{fig1}](figure1.png)
 
 By using the greekLetters package, these examples demonstrate how to effectively incorporate Greek letters and mathematical symbols into R outputs, enhancing the clarity of R statistical outputs.
+
+
 
 # Package Availability
 
