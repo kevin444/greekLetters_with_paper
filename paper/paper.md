@@ -57,7 +57,7 @@ paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
 
 The outputs of the commands shown in the console are presented in Figure 1
 
-![Console outputs\label{fig1}](figure1.png){: style="width:100%; height:auto;" }
+![Console outputs\label{fig1}](figure1.png)
 
 By using the greekLetters package, these examples demonstrate how to effectively incorporate Greek letters and mathematical symbols into R outputs, enhancing the clarity of R statistical outputs.
 
