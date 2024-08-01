@@ -65,8 +65,8 @@ Here are some straightforward examples showcasing its utility.
     paste("versus", greeks("H_1"), ":", greeks("mu"), greeks("notEqual"), " 0" )
     
     # output
-    # "H₀ : μ  = 0"
-    # "versus H₁ : μ ≠ 0"
+    # "H~0~ : μ  = 0"
+    # "versus H~1~ : μ ≠ 0"
 ```
 
 By using the greekLetters package, these examples demonstrate how to effectively incorporate Greek letters and mathematical symbols into R outputs, enhancing the clarity of R statistical outputs.
